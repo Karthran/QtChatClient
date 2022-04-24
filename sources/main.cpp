@@ -1,5 +1,7 @@
 #include <QApplication>
 #include "Application.h"
+#include "mainwindow.h"
+
 #include <iostream>
 #include <string>
 
@@ -12,6 +14,8 @@
 auto main(int argc, char* argv[]) -> int
 {
     QApplication app(argc,argv);
+    MainWindow w;
+    w.show();
     return app.exec();
 //#ifdef _WIN32
 //  SetConsoleOutputCP(CP_UTF8);
